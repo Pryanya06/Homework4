@@ -62,12 +62,13 @@ public class Main {
         int one = 10;
         int two = 20;
         int three = 30;
-        if (one > two) {
-            if ( one > three ) {
-            System.out.println( " Число " + one + " больше,чем число " + two);
-        } else {
-                System.out.println(" Число " + one + " больше,чем число " + three);
-            }
+        if (one > two)  {
+            System.out.println( " Наибольшее число " + one );
+        } else if  ( two > three) {
+                System.out.println(" Наибольшее число " + two);
+            } else {
+            System.out.println( " Наибольшее число " + three);
+        }
+
         }
     }
-}
