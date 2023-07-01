@@ -59,16 +59,20 @@ public class Main {
             System.out.println( " Если в вагоне " + place + " человек, то остались только стоячие места");
         }
 
-        int one = 10;
-        int two = 20;
-        int three = 30;
-        if (one > two)  {
-            System.out.println( " Наибольшее число " + one );
-        } else if  ( two > three) {
-                System.out.println(" Наибольшее число " + two);
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one > two) {
+            if (one > three) {
+                System.out.println(" Наибольшее число " + one);
             } else {
-            System.out.println( " Наибольшее число " + three);
+                System.out.println(" Наибольшее число " + three);
+            }
+        } else if (two > three) {
+            System.out.println( " Наибольшее число " + two);
+        } else {
+            System.out.println(" Наибольшее число " + three);
         }
 
-        }
+    }
     }
