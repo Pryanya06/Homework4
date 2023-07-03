@@ -22,29 +22,29 @@ public class Main {
             System.out.println( " Если скорость " + speed + " то можно ездить спокойно");
         }
 
-        int age1 = 65;
-        if (age1 < 2) {
+        int age1 = 24;
+        if (age1 <= 2) {
             System.out.println( " Если возраст человека равен " + age1 + " то ему пора спать");
         }
-        if (age1 > 2 && age1 < 6) {
+        else if (age1 > 2 && age1 <= 6) {
             System.out.println( " Если возраст человека равен " + age1 + " то ему нужно ходить в детский сад");
         }
-        if (age1 > 7 && age1 < 18) {
+        else if (age1 >= 7 && age1 < 18) {
             System.out.println( " Если возраст человека равен " + age1 + " то ему нужно ходить в школу ");
         }
-        if (age1 > 18 && age1 < 24) {
+        else if (age1 >= 18 && age1 < 24) {
             System.out.println( " Если возраст человека равен " + age1 + " то ему нужно ходить в университет");
         }
-        if (age1 > 24 && age1 <= 60) {
+        else if (age1 >= 24 && age1 <= 60) {
             System.out.println( " Если возраст человека равен " + age1 + " то ему нужно ходить на работу");
         } else {
             System.out.println( " Если возраст человека равен " + age1 + " то он может отдохнуть");
         }
 
-        int age2 = 15;
+        int age2 = 14;
         if (age2 < 5) {
             System.out.println( " Если возраст ребенка равен " + age2 + ", то он не может кататься на аттракционе");
-        } else if (age2 >= 5 && age2 < 14) {
+        } else if (age2 >= 5 && age2 <= 14) {
             System.out.println( " Если возраст ребенка равен " + age2 + ", то он может кататься на аттракционе в сопровождении взрослого. Если взрослого нет, кататься нельзя");
         } else if (age2 > 14){
             System.out.println( " Если возраст ребенка равен " + age2 + ", то он может кататься без сопровождения взрослого");
@@ -59,14 +59,20 @@ public class Main {
             System.out.println( " Если в вагоне " + place + " человек, то остались только стоячие места");
         }
 
-        int one = 10;
-        int two = 20;
-        int three = 30;
-        boolean moreToLess = three > two || two > one;
-        if (moreToLess) {
-            System.out.println( " Число " + three + " больше,чем число " + two);
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one > two) {
+            if (one > three) {
+                System.out.println(" Наибольшее число " + one);
+            } else {
+                System.out.println(" Наибольшее число " + three);
+            }
+        } else if (two > three) {
+            System.out.println( " Наибольшее число " + two);
         } else {
-            System.out.println( " Число " + two + " больше,чем число " + one);
+            System.out.println(" Наибольшее число " + three);
         }
+
     }
-}
+    }
